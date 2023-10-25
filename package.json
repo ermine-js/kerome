@@ -1,0 +1,30 @@
+{
+  "name": "kerome",
+  "version": "0.0.0",
+  "description": "Kerome is a fake chrome bridge for web extensions",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ermine-js/kerome.git"
+  },
+  "keywords": [
+    "Chrome",
+    "Extension",
+    "Web",
+    "kerome",
+    "bridge"
+  ],
+  "author": "banyudu <banyudu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ermine-js/kerome/issues"
+  },
+  "homepage": "https://github.com/ermine-js/kerome#readme"
+}
