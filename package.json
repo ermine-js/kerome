@@ -1,9 +1,11 @@
 {
   "name": "kerome",
   "version": "0.0.0",
-  "description": "Kerome is a fake chrome bridge for web extensions",
+  "description": "kerome is a library for developing browser extensions, offering convenient communication mechanisms and APIs.",
   "main": "dist/index.js",
   "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "publishConfig": {
@@ -26,5 +28,10 @@
   "bugs": {
     "url": "https://github.com/ermine-js/kerome/issues"
   },
-  "homepage": "https://github.com/ermine-js/kerome#readme"
+  "homepage": "https://github.com/ermine-js/kerome#readme",
+  "devDependencies": {
+    "@types/chrome": "^0.0.250",
+    "mocha": "^10.2.0",
+    "typescript": "^5.2.2"
+  }
 }
