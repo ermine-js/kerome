@@ -6,8 +6,12 @@ dependencies:
     version: registry.npmjs.org/lodash-es@4.17.21
 
 devDependencies:
+  '@playwright/test':
+    specifier: ^1.39.0
+    version: 1.39.0
   '@types/chrome':
     specifier: ^0.0.250
+<<<<<<< HEAD
     version: registry.npmjs.org/@types/chrome@0.0.250
   '@types/lodash-es':
     specifier: ^4.17.11
@@ -33,6 +37,12 @@ devDependencies:
   husky:
     specifier: ^8.0.3
     version: registry.npmjs.org/husky@8.0.3
+=======
+    version: 0.0.250
+  '@types/node':
+    specifier: ^20.9.0
+    version: 20.9.0
+>>>>>>> 9c6b2a3 (test: setup playwright)
   mocha:
     specifier: ^10.2.0
     version: registry.npmjs.org/mocha@10.2.0
@@ -42,6 +52,7 @@ devDependencies:
 
 packages:
 
+<<<<<<< HEAD
   registry.npmjs.org/@aashutoshrathi/word-wrap@1.2.6:
     resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@aashutoshrathi/word-wrap/-/word-wrap-1.2.6.tgz}
     name: '@aashutoshrathi/word-wrap'
@@ -57,6 +68,18 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
+=======
+  /@playwright/test@1.39.0:
+    resolution: {integrity: sha512-3u1iFqgzl7zr004bGPYiN/5EZpRUSFddQBra8Rqll5N0/vfpqlP9I9EXqAoGacuAbX6c9Ulg/Cjqglp5VkK6UQ==}
+    engines: {node: '>=16'}
+    hasBin: true
+    dependencies:
+      playwright: 1.39.0
+    dev: true
+
+  /@types/chrome@0.0.250:
+    resolution: {integrity: sha512-bg6UC+cXS5blsaJaVOg0TQfu6FG64og/4o+65IuaVvlTKBzNUiazLabPde+gRpk8DSrqpGBPk0xME+tbU3KlKg==}
+>>>>>>> 9c6b2a3 (test: setup playwright)
     dependencies:
       eslint: registry.npmjs.org/eslint@8.53.0
       eslint-visitor-keys: registry.npmjs.org/eslint-visitor-keys@3.4.3
@@ -108,6 +131,7 @@ packages:
       - supports-color
     dev: true
 
+<<<<<<< HEAD
   registry.npmjs.org/@humanwhocodes/module-importer@1.0.1:
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@humanwhocodes/module-importer/-/module-importer-1.0.1.tgz}
     name: '@humanwhocodes/module-importer'
@@ -401,6 +425,16 @@ packages:
     resolution: {integrity: sha512-JoX0apGbHaUJBNl6yF+p6JAFYZ666/hhCGKN5t9QFjbJQKUU/g8MNbFDbvfrgKXvI1QpZplPOnwIo99lX/AAmA==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/ansi-colors/-/ansi-colors-4.1.1.tgz}
     name: ansi-colors
     version: 4.1.1
+=======
+  /@types/node@20.9.0:
+    resolution: {integrity: sha512-nekiGu2NDb1BcVofVcEKMIwzlx4NjHlcjhoxxKBNLtz15Y1z7MYf549DFvkHSId02Ax6kGwWntIBPC3l/JZcmw==}
+    dependencies:
+      undici-types: 5.26.5
+    dev: true
+
+  /ansi-colors@4.1.1:
+    resolution: {integrity: sha512-JoX0apGbHaUJBNl6yF+p6JAFYZ666/hhCGKN5t9QFjbJQKUU/g8MNbFDbvfrgKXvI1QpZplPOnwIo99lX/AAmA==}
+>>>>>>> 9c6b2a3 (test: setup playwright)
     engines: {node: '>=6'}
     dev: true
 
@@ -1272,6 +1306,7 @@ packages:
     version: 3.2.9
     dev: true
 
+<<<<<<< HEAD
   registry.npmjs.org/for-each@0.3.3:
     resolution: {integrity: sha512-jqYfLp7mo9vIyQf8ykW2v7A+2N4QjeCeI5+Dz9XraiO1ign81wjiH7Fb9vSOWvQfNtmSa4H2RoQTrrXivdUZmw==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/for-each/-/for-each-0.3.3.tgz}
     name: for-each
@@ -1290,6 +1325,18 @@ packages:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz}
     name: fsevents
     version: 2.3.3
+=======
+  /fsevents@2.3.2:
+    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
+    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /fsevents@2.3.3:
+    resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
+>>>>>>> 9c6b2a3 (test: setup playwright)
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
     requiresBuild: true
@@ -2081,11 +2128,34 @@ packages:
     engines: {node: '>=8.6'}
     dev: true
 
+<<<<<<< HEAD
   registry.npmjs.org/prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz}
     name: prelude-ls
     version: 1.2.1
     engines: {node: '>= 0.8.0'}
+=======
+  /playwright-core@1.39.0:
+    resolution: {integrity: sha512-+k4pdZgs1qiM+OUkSjx96YiKsXsmb59evFoqv8SKO067qBA+Z2s/dCzJij/ZhdQcs2zlTAgRKfeiiLm8PQ2qvw==}
+    engines: {node: '>=16'}
+    hasBin: true
+    dev: true
+
+  /playwright@1.39.0:
+    resolution: {integrity: sha512-naE5QT11uC/Oiq0BwZ50gDmy8c8WLPRTEWuSSFVG2egBka/1qMoSqYQcROMT9zLwJ86oPofcTH2jBY/5wWOgIw==}
+    engines: {node: '>=16'}
+    hasBin: true
+    dependencies:
+      playwright-core: 1.39.0
+    optionalDependencies:
+      fsevents: 2.3.2
+    dev: true
+
+  /randombytes@2.1.0:
+    resolution: {integrity: sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ==}
+    dependencies:
+      safe-buffer: 5.2.1
+>>>>>>> 9c6b2a3 (test: setup playwright)
     dev: true
 
   registry.npmjs.org/punycode@2.3.1:
@@ -2492,6 +2562,7 @@ packages:
     hasBin: true
     dev: true
 
+<<<<<<< HEAD
   registry.npmjs.org/unbox-primitive@1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/unbox-primitive/-/unbox-primitive-1.0.2.tgz}
     name: unbox-primitive
@@ -2501,6 +2572,14 @@ packages:
       has-bigints: registry.npmjs.org/has-bigints@1.0.2
       has-symbols: registry.npmjs.org/has-symbols@1.0.3
       which-boxed-primitive: registry.npmjs.org/which-boxed-primitive@1.0.2
+=======
+  /undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+    dev: true
+
+  /workerpool@6.2.1:
+    resolution: {integrity: sha512-ILEIE97kDZvF9Wb9f6h5aXK4swSlKGUcOEGiIYb2OOu/IrDU9iwj0fD//SsA6E5ibwJxpEvhullJY4Sl4GcpAw==}
+>>>>>>> 9c6b2a3 (test: setup playwright)
     dev: true
 
   registry.npmjs.org/uri-js@4.4.1:

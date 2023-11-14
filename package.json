@@ -8,7 +8,8 @@
     "dev": "tsc -w",
     "lint": "eslint --ext .ts src",
     "lint:fix": "npm run lint -- --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "playwright test",
+    "test:ui": "playwright test --ui"
   },
   "publishConfig": {
     "access": "public",
@@ -32,8 +33,10 @@
   },
   "homepage": "https://github.com/ermine-js/kerome#readme",
   "devDependencies": {
+    "@playwright/test": "^1.39.0",
     "@types/chrome": "^0.0.250",
     "@types/lodash-es": "^4.17.11",
+    "@types/node": "^20.9.0",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
     "eslint": "^8.0.1",
     "eslint-config-standard-with-typescript": "^39.1.1",
