@@ -123,7 +123,7 @@ module.exports = {
     new CleanWebpackPlugin()
   ],
   devServer: {
-    port: 'auto',
+    port: 13936,
     devMiddleware: {
       writeToDisk: true
     }
