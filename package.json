@@ -8,8 +8,12 @@
     "dev": "tsc -w",
     "lint": "eslint --ext .ts src",
     "lint:fix": "npm run lint -- --fix",
-    "test": "playwright test",
-    "test:ui": "playwright test --ui"
+    "extensions": "run-p extension:*",
+    "extension:sandbox": "cd extensions/sandbox && npm run dev",
+    "test": "run-s build playwright",
+    "test:ui": "run-s build playwright:ui",
+    "playwright": "playwright test",
+    "playwright:ui": "playwright test --ui"
   },
   "publishConfig": {
     "access": "public",
@@ -45,6 +49,7 @@
     "eslint-plugin-promise": "^6.0.0",
     "husky": "^8.0.3",
     "mocha": "^10.2.0",
+    "npm-run-all": "^4.1.5",
     "typescript": "^5.2.2"
   },
   "dependencies": {

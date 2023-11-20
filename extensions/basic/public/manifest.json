@@ -1,0 +1,12 @@
+{
+  "name": "sandbox",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "description": "Sandbox test fixture",
+  "sandbox": {
+    "pages": ["sandbox.html"]
+  }
+}
