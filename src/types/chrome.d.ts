@@ -1,17 +1,3 @@
-/* eslint-disable */
-
-export enum ExtensionRuntime {
-  Background = 'background',
-  Page = 'page', // popup, options, pages, etc.
-  Devtools = 'devtools',
-  Sandbox = 'sandbox',
-  External = 'external'
-}
-
-// export interface Kerome {
-
-// }
-
 /// <reference types="filesystem" />
 /// <reference path="./har-format/index.d.ts" />
 /// <reference path="./chrome-cast/index.d.ts" />
@@ -2464,7 +2450,7 @@ declare namespace chrome.devtools.inspectedWindow {
    * Parameter result: The result of evaluation.
    * Parameter exceptionInfo: An object providing details if an exception occurred while evaluating the expression.
    */
-  // @ts-ignore
+  // @ts-expect-error
   export function eval<T> (
     expression: string,
     callback?: (result: T, exceptionInfo: EvaluationExceptionInfo) => void,
@@ -2477,7 +2463,7 @@ declare namespace chrome.devtools.inspectedWindow {
    * Parameter result: The result of evaluation.
    * Parameter exceptionInfo: An object providing details if an exception occurred while evaluating the expression.
    */
-  // @ts-ignore
+  // @ts-expect-error
   export function eval<T> (
     expression: string,
     options?: EvalOptions,
