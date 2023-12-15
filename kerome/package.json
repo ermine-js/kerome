@@ -1,24 +1,11 @@
 {
-  "name": "kerome-workspace",
-  "private": true,
+  "name": "kerome",
   "version": "0.0.0",
   "description": "kerome is a library for developing browser extensions, offering convenient communication mechanisms and APIs.",
   "main": "dist/index.js",
   "scripts": {
-    "build": "run-p build:kerome",
-    "build:kerome": "cd kerome && npm run build",
-    "dev": "tsc -w",
-    "lint": "eslint --ext .ts src",
-    "lint:fix": "npm run lint -- --fix",
-    "extensions": "run-s extensions:build extensions:dev",
-    "extensions:dev": "run-p extension:dev:*",
-    "extensions:build": "run-p extension:build:*",
-    "extension:dev:basic": "cd extensions/basic && npm run dev",
-    "extension:build:basic": "cd extensions/basic && npm run build",
-    "test": "run-s build playwright",
-    "test:ui": "run-s build playwright:ui",
-    "playwright": "playwright test",
-    "playwright:ui": "playwright test --ui"
+    "build": "tsc",
+    "dev": "tsc -w"
   },
   "publishConfig": {
     "access": "public",

@@ -1,22 +1,23 @@
-import { test as base, chromium, type BrowserContext } from '@playwright/test';
-import path from 'path';
+import { test as base, chromium, type BrowserContext } from '@playwright/test'
+import path from 'path'
 
 export const test = base.extend<{
-  context: BrowserContext;
-  extensionId: string;
+  context: BrowserContext
+  extensionId: string
 }>({
-  context: async ({ }, use) => {
-    const pathToExtension = path.join(__dirname, '..', '..', 'extensions', 'basic', 'dist');
+  // eslint-disable-next-line no-empty-pattern
+  context: async ({}, use) => {
+    const pathToExtension = path.join(__dirname, '..', '..', 'extensions', 'basic', 'dist')
     const context = await chromium.launchPersistentContext('', {
       headless: false,
       args: [
-        `--headless=new`,
+        '--headless=new',
         `--disable-extensions-except=${pathToExtension}`,
-        `--load-extension=${pathToExtension}`,
-      ],
-    });
-    await use(context);
-    await context.close();
+        `--load-extension=${pathToExtension}`
+      ]
+    })
+    await use(context)
+    await context.close()
   },
   extensionId: async ({ context }, use) => {
     /*
@@ -27,12 +28,11 @@ export const test = base.extend<{
     */
 
     // for manifest v3:
-    let [background] = context.serviceWorkers();
-    if (!background)
-      background = await context.waitForEvent('serviceworker');
+    let [background] = context.serviceWorkers()
+    if (!background) { background = await context.waitForEvent('serviceworker') }
 
-    const extensionId = background.url().split('/')[2];
-    await use(extensionId);
-  },
-});
-export const expect = test.expect;
+    const extensionId = background.url().split('/')[2]
+    await use(extensionId)
+  }
+})
+export const expect = test.expect

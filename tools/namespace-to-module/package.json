@@ -1,0 +1,20 @@
+{
+  "name": "namespace-to-module",
+  "version": "0.0.0",
+  "description": "Convert namespace to modules",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "namespace",
+    "convert",
+    "module"
+  ],
+  "author": "banyudu <banyudu@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ts-morph": "^21.0.1",
+    "yargs": "^17.7.2"
+  }
+}
