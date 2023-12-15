@@ -4,6 +4,8 @@
   "description": "Convert namespace to modules",
   "main": "dist/index.js",
   "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js ../../kerome/src/types/chrome.d.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -16,5 +18,8 @@
   "dependencies": {
     "ts-morph": "^21.0.1",
     "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/yargs": "^17.0.32"
   }
 }

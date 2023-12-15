@@ -59,7 +59,7 @@ importers:
     dependencies:
       kerome:
         specifier: workspace:*
-        version: link:../..
+        version: link:../../kerome
       react:
         specifier: ^18.2.0
         version: registry.npmjs.org/react@18.2.0
@@ -110,6 +110,55 @@ importers:
         specifier: ^4.15.1
         version: registry.npmjs.org/webpack-dev-server@4.15.1(webpack-cli@5.1.4)(webpack@5.89.0)
 
+  kerome:
+    dependencies:
+      lodash-es:
+        specifier: ^4.17.21
+        version: registry.npmjs.org/lodash-es@4.17.21
+    devDependencies:
+      '@playwright/test':
+        specifier: ^1.39.0
+        version: registry.npmjs.org/@playwright/test@1.39.0
+      '@types/chrome':
+        specifier: ^0.0.250
+        version: registry.npmjs.org/@types/chrome@0.0.250
+      '@types/lodash-es':
+        specifier: ^4.17.11
+        version: registry.npmjs.org/@types/lodash-es@4.17.11
+      '@types/node':
+        specifier: ^20.9.0
+        version: registry.npmjs.org/@types/node@20.9.0
+      '@typescript-eslint/eslint-plugin':
+        specifier: ^6.4.0
+        version: registry.npmjs.org/@typescript-eslint/eslint-plugin@6.4.0(@typescript-eslint/parser@6.11.0)(eslint@8.0.1)(typescript@5.2.2)
+      eslint:
+        specifier: ^8.0.1
+        version: registry.npmjs.org/eslint@8.0.1
+      eslint-config-standard-with-typescript:
+        specifier: ^39.1.1
+        version: registry.npmjs.org/eslint-config-standard-with-typescript@39.1.1(@typescript-eslint/eslint-plugin@6.4.0)(eslint-plugin-import@2.25.2)(eslint-plugin-n@15.0.0)(eslint-plugin-promise@6.0.0)(eslint@8.0.1)(typescript@5.2.2)
+      eslint-plugin-import:
+        specifier: ^2.25.2
+        version: registry.npmjs.org/eslint-plugin-import@2.25.2(@typescript-eslint/parser@6.11.0)(eslint@8.0.1)
+      eslint-plugin-n:
+        specifier: ^15.0.0
+        version: registry.npmjs.org/eslint-plugin-n@15.0.0(eslint@8.0.1)
+      eslint-plugin-promise:
+        specifier: ^6.0.0
+        version: registry.npmjs.org/eslint-plugin-promise@6.0.0(eslint@8.0.1)
+      husky:
+        specifier: ^8.0.3
+        version: registry.npmjs.org/husky@8.0.3
+      mocha:
+        specifier: ^10.2.0
+        version: registry.npmjs.org/mocha@10.2.0
+      npm-run-all:
+        specifier: ^4.1.5
+        version: registry.npmjs.org/npm-run-all@4.1.5
+      typescript:
+        specifier: ^5.2.2
+        version: registry.npmjs.org/typescript@5.2.2
+
   tools/namespace-to-module:
     dependencies:
       ts-morph:
@@ -118,6 +167,10 @@ importers:
       yargs:
         specifier: ^17.7.2
         version: registry.npmjs.org/yargs@17.7.2
+    devDependencies:
+      '@types/yargs':
+        specifier: ^17.0.32
+        version: registry.npmjs.org/@types/yargs@17.0.32
 
 packages:
 
@@ -614,6 +667,20 @@ packages:
     version: 8.5.9
     dependencies:
       '@types/node': registry.npmjs.org/@types/node@20.9.0
+    dev: true
+
+  registry.npmjs.org/@types/yargs-parser@21.0.3:
+    resolution: {integrity: sha512-I4q9QU9MQv4oEOz4tAHJtNz1cwuLxn2F3xcc2iV5WdqLPpUnj30aUuxt1mAxYTG+oe8CZMV/+6rU4S4gRDzqtQ==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@types/yargs-parser/-/yargs-parser-21.0.3.tgz}
+    name: '@types/yargs-parser'
+    version: 21.0.3
+    dev: true
+
+  registry.npmjs.org/@types/yargs@17.0.32:
+    resolution: {integrity: sha512-xQ67Yc/laOG5uMfX/093MRlGGCIBzZMarVa+gfNKJxWAIgykYpVGkBdbqEzGDDfCrVUj6Hiff4mTZ5BA6TmAog==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@types/yargs/-/yargs-17.0.32.tgz}
+    name: '@types/yargs'
+    version: 17.0.32
+    dependencies:
+      '@types/yargs-parser': registry.npmjs.org/@types/yargs-parser@21.0.3
     dev: true
 
   registry.npmjs.org/@typescript-eslint/eslint-plugin@6.4.0(@typescript-eslint/parser@6.11.0)(eslint@8.0.1)(typescript@5.2.2):

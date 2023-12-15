@@ -7,6 +7,8 @@
   "scripts": {
     "build": "run-p build:kerome",
     "build:kerome": "cd kerome && npm run build",
+    "build:tools": "run-p build:tools:namespace-to-module",
+    "build:tools:namespace-to-module": "cd tools/namespace-to-module && npm run build",
     "dev": "tsc -w",
     "lint": "eslint --ext .ts src",
     "lint:fix": "npm run lint -- --fix",
