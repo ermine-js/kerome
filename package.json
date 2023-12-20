@@ -10,7 +10,7 @@
     "build:tools": "run-p build:tools:namespace-to-module",
     "build:tools:namespace-to-module": "cd tools/namespace-to-module && npm run build",
     "dev": "tsc -w",
-    "lint": "eslint --ext .ts src",
+    "lint": "eslint --ext .ts .",
     "lint:fix": "npm run lint -- --fix",
     "extensions": "run-s extensions:build extensions:dev",
     "extensions:dev": "run-p extension:dev:*",
